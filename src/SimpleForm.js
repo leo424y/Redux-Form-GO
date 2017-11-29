@@ -6,24 +6,13 @@ const SimpleForm = props => {
   return (
     <form onSubmit={handleSubmit}>
       <div>
-        <label>First Name</label>
+        <label>Title</label>
         <div>
           <Field
-            name="firstName"
+            name="title"
             component="input"
             type="text"
-            placeholder="First Name"
-          />
-        </div>
-      </div>
-      <div>
-        <label>Last Name</label>
-        <div>
-          <Field
-            name="lastName"
-            component="input"
-            type="text"
-            placeholder="Last Name"
+            placeholder="Title"
           />
         </div>
       </div>
@@ -35,6 +24,17 @@ const SimpleForm = props => {
             component="input"
             type="email"
             placeholder="Email"
+          />
+        </div>
+      </div>
+      <div>
+        <label>Phone</label>
+        <div>
+          <Field
+            name="phone"
+            component="input"
+            type="text"
+            placeholder="Phone"
           />
         </div>
       </div>
